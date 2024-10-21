@@ -1,0 +1,176 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyOv4CIA2ZrNpWjn05Qw6rio",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Amaryllis2021/tac/blob/main/tp1ipynb\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "tgDSIi827H0h",
+        "outputId": "6a8e0f11-18d3-467c-d978-3f46b0eaa1da"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Téléchargement de KB_JB230_1892-08-07_01-0003.pdf terminé.\n",
+            "Téléchargement de KB_JB427_1920-01-10_01-00004.pdf terminé.\n",
+            "Téléchargement de KB_JB555_1836-02-08_01-00002.pdf terminé.\n",
+            "Téléchargement de KB_JB638_1860-05-21_01-00002.pdf terminé.\n",
+            "Téléchargement de KB_JB773_1918-11-30_01-00002.pdf terminé.\n",
+            "Téléchargement de KB_JB838_1887-12-28_01-00003.pdf terminé.\n",
+            "Téléchargement de KB_JB230_1903-10-16_01-0002.pdf terminé.\n",
+            "Téléchargement de KB_JB427_1933-01-04_01-00003.pdf terminé.\n",
+            "Téléchargement de KB_JB555_1899-01-19_01-00003.pdf terminé.\n",
+            "Téléchargement de KB_JB638_1902-12-20_01-00002.pdf terminé.\n",
+            "Téléchargement de KB_JB773_1933-10-07_01-00007.pdf terminé.\n",
+            "Téléchargement de KB_JB838_1911-08-03_01-00006.pdf terminé.\n",
+            "Téléchargement de KB_JB230_1913-07-05_01-0001.pdf terminé.\n",
+            "Téléchargement de KB_JB427_1949-07-18_01-00008.pdf terminé.\n",
+            "Téléchargement de KB_JB555_1940-03-01_01-00004.pdf terminé.\n",
+            "Téléchargement de KB_JB638_1946-07-18_01-00003.pdf terminé.\n",
+            "Téléchargement de KB_JB773_1950-07-22_01-00010.pdf terminé.\n",
+            "Téléchargement de KB_JB838_1943-09-04_01-00002.pdf terminé.\n",
+            "Téléchargement de KB_JB258_1884-09-03_01-0003.pdf terminé.\n",
+            "Téléchargement de KB_JB449_1846-05-30_01-00002.pdf terminé.\n",
+            "Téléchargement de KB_JB567_1857-02-02_01-00003.pdf terminé.\n",
+            "Téléchargement de KB_JB685_1894-05-14_01-0003.pdf terminé.\n",
+            "Téléchargement de KB_JB835_1911-04-24_01-00004.pdf terminé.\n",
+            "Téléchargement de KB_JB92_1860-02-09_01-00003.pdf terminé.\n",
+            "Téléchargement de KB_JB258_1894-12-09_01-0003.pdf terminé.\n",
+            "Téléchargement de KB_JB449_1912-01-04_01-00003.pdf terminé.\n",
+            "Téléchargement de KB_JB567_1892-01-03_01-00005.pdf terminé.\n",
+            "Téléchargement de KB_JB685_1903-01-18_01-0002.pdf terminé.\n",
+            "Téléchargement de KB_JB835_1930-04-08_01-00006.pdf terminé.\n",
+            "Téléchargement de KB_JB92_1873-02-06_01-00002.pdf terminé.\n",
+            "Téléchargement de KB_JB258_1906-01-09_01-0002.pdf terminé.\n",
+            "Téléchargement de KB_JB449_1947-08-29_01-00003.pdf terminé.\n",
+            "Téléchargement de KB_JB567_1924-08-30_01-00003.pdf terminé.\n",
+            "Téléchargement de KB_JB685_1913-06-07_01-0006.pdf terminé.\n",
+            "Téléchargement de KB_JB835_1949-09-18_01-00004.pdf terminé.\n",
+            "Téléchargement de KB_JB92_1885-09-29_01-00002.pdf terminé.\n",
+            "Téléchargement de KB_JB421_1899-05-15_01-00003.pdf terminé.\n",
+            "Téléchargement de KB_JB494_1853-10-30_01-0002.pdf terminé.\n",
+            "Téléchargement de KB_JB572_1850-03-15_01-00003.pdf terminé.\n",
+            "Téléchargement de KB_JB729_1895-10-08_01-00003.pdf terminé.\n",
+            "Téléchargement de KB_JB837_1886-12-28_01-00002.pdf terminé.\n",
+            "Téléchargement de KB_JB421_1926-10-29_01-00002.pdf terminé.\n",
+            "Téléchargement de KB_JB494_1922-09-28_01-0005.pdf terminé.\n",
+            "Téléchargement de KB_JB572_1927-07-20_01-00005.pdf terminé.\n",
+            "Téléchargement de KB_JB729_1927-11-15_01-00004.pdf terminé.\n",
+            "Téléchargement de KB_JB837_1925-01-01_01-00003.pdf terminé.\n",
+            "Téléchargement de KB_JB421_1950-04-15_01-00004.pdf terminé.\n",
+            "Téléchargement de KB_JB494_1939-12-08_01-0004.pdf terminé.\n",
+            "Téléchargement de KB_JB572_1950-06-07_01-00004.pdf terminé.\n",
+            "Téléchargement de KB_JB729_1939-10-31_01-00006.pdf terminé.\n",
+            "Téléchargement de KB_JB837_1950-12-01_01-00007.pdf terminé.\n"
+          ]
+        }
+      ],
+      "source": [
+        "import requests # Pour faire des requêtes HTTP\n",
+        "from bs4 import BeautifulSoup #Pour parser le HTML\n",
+        "import urllib.request #Pour télécharger les fichiers\n",
+        "\n",
+        "# URL de la page web\n",
+        "url = https://max.de.wilde.web.ulb.be/camille/\n",
+        "\n",
+        "# Envoyer une requête HTTP pour récupérer la page\n",
+        "response = requests.get(url)\n",
+        "soup = BeautifulSoup(response.content, 'html.parser')\n",
+        "\n",
+        "# Trouver tous les liens vers des fichiers PDF\n",
+        "pdf_links = soup.find_all('a', href=True)\n",
+        "pdf_links = [link['href'] for link in pdf_links if link['href'].endswith('.pdf')]\n",
+        "\n",
+        "# Créer un dossier pour stocker les fichiers téléchargés\n",
+        "import os\n",
+        "if not os.path.exists(\"downloads\"):\n",
+        "    os.makedirs(\"downloads\")\n",
+        "\n",
+        "# Télécharger chaque fichier PDF\n",
+        "for link in pdf_links[:51]:  # Télécharger seulement les 51 premiers\n",
+        "    filename = link.split('/')[-1]\n",
+        "    filepath = os.path.join(\"downloads\", filename)\n",
+        "    urllib.request.urlretrieve(url + link, filepath)\n",
+        "    print(f\"Téléchargement de {filename} terminé.\")\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import requests\n",
+        "import pandas as pd\n",
+        "\n",
+        "#Définir les paramètres de l'API\n",
+        "API_KEY = 'x-rapidapi-key: caa3f22830msh72ffe0088d6263fp12f755jsn8949c0337ba1'\n",
+        "BASE_URL = \"url data =\n",
+        "\n",
+        "\n",
+        "make_api_request(\"search\", {\"query\": \"paris\"})\n",
+        "df = pd.DataFrame(data[\"results\"])\n",
+        "print(df.head())\n",
+        "\n",
+        "#Construire la requête\n",
+        "def make_api_request(endpoint, params):\n",
+        "    url = f\"{BASE_URL}/{endpoint}\"\n",
+        "    headers = {'x-rapidapi-key: caa3f22830msh72ffe0088d6263fp12f755jsn8949c0337ba1'\": API_KEY}\n",
+        "    response = requests.get(url, headers=headers, params=params)\n",
+        "    return response.json()\n",
+        "\n",
+        "#Traiter la réponse\n",
+        "data = make_api_request(\"search\", {\"query\": \"bruxelles\"})\n",
+        "df = pd.DataFrame(data[\"results\"])\n",
+        "print(df.head())\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 110
+        },
+        "id": "Smcv_jm37VcL",
+        "outputId": "2dbf85dc-f978-4546-d491-b15339355dfc"
+      },
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "SyntaxError",
+          "evalue": "unterminated string literal (detected at line 6) (<ipython-input-4-8d91671d0319>, line 6)",
+          "traceback": [
+            "\u001b[0;36m  File \u001b[0;32m\"<ipython-input-4-8d91671d0319>\"\u001b[0;36m, line \u001b[0;32m6\u001b[0m\n\u001b[0;31m    BASE_URL = \"url data = make_api_request(\"search\", {\"query\": \"paris\"})\u001b[0m\n\u001b[0m                                                                      ^\u001b[0m\n\u001b[0;31mSyntaxError\u001b[0m\u001b[0;31m:\u001b[0m unterminated string literal (detected at line 6)\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
